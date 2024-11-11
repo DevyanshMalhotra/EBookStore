@@ -1,0 +1,74 @@
+# Ignore Maven target directory
+target/
+
+# Ignore build output directories for various IDEs
+out/
+build/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# Eclipse files
+*.classpath
+*.project
+*.settings/
+
+# NetBeans files
+nbproject/
+nbbuild/
+dist/
+nbdist/
+*.nb-gradle/
+
+# VS Code settings
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Exclude the Maven Wrapper files if you’re not using them
+.mvn/wrapper/maven-wrapper.jar
+
+# Ignore JAR/WAR/EAR files
+*.jar
+*.war
+*.ear
+
+# Ignore compiled class files
+*.class
+
+# Ignore test reports
+test-output/
+surefire-reports/
+failsafe-reports/
+
+# Ignore database files (if any)
+*.sql
+*.db
+
+# Environment variables
+.env
+
+# Exclude any secret or config files (adjust paths as necessary)
+config/secret.key
+config/*.properties
+
+# Ignore coverage reports
+.coverage
+coverage/
+*.lcov
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Ignore error pages (optional, if generated during build or testing)
+error/*.html

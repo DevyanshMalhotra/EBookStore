@@ -1,0 +1,146 @@
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+    <display-name>EBook Application</display-name>
+
+    <!-- Register Controller Servlet -->
+    <servlet>
+        <servlet-name>registercontroller</servlet-name>
+        <display-name>RegisterController</display-name>
+        <servlet-class>com.controller.registercontroller</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registercontroller</servlet-name>
+        <url-pattern>/registercontroller</url-pattern>
+    </servlet-mapping>
+
+    <!-- Login Controller Servlet -->
+    <servlet>
+        <servlet-name>logincontroller</servlet-name>
+        <display-name>LoginController</display-name>
+        <servlet-class>com.controller.logincontroller</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logincontroller</servlet-name>
+        <url-pattern>/logincontroller</url-pattern>
+    </servlet-mapping>
+
+    <!-- Admin Controllers -->
+    <servlet>
+        <servlet-name>BookAdd</servlet-name>
+        <display-name>BookAdd</display-name>
+        <servlet-class>com.admin.controller.BookAdd</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookAdd</servlet-name>
+        <url-pattern>/BookAdd</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>editbookcontroller</servlet-name>
+        <display-name>EditBookController</display-name>
+        <servlet-class>com.admin.controller.editbookcontroller</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editbookcontroller</servlet-name>
+        <url-pattern>/editbookcontroller</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deletecontroller</servlet-name>
+        <display-name>DeleteController</display-name>
+        <servlet-class>com.admin.controller.deletecontroller</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deletecontroller</servlet-name>
+        <url-pattern>/deletecontroller</url-pattern>
+    </servlet-mapping>
+
+    <!-- Other Controllers -->
+    <servlet>
+        <servlet-name>logoutcontroller</servlet-name>
+        <display-name>LogoutController</display-name>
+        <servlet-class>com.controller.logoutcontroller</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logoutcontroller</servlet-name>
+        <url-pattern>/logoutcontroller</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>cartcontroller</servlet-name>
+        <display-name>CartController</display-name>
+        <servlet-class>com.cart.controller.cartcontroller</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cartcontroller</servlet-name>
+        <url-pattern>/cartcontroller</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>removecartcontroller</servlet-name>
+        <display-name>RemoveCartController</display-name>
+        <servlet-class>com.cart.controller.removecartcontroller</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>removecartcontroller</servlet-name>
+        <url-pattern>/removecartcontroller</url-pattern>
+    </servlet-mapping>
+
+    <!-- Additional Controllers -->
+    <servlet>
+        <servlet-name>addOldBook</servlet-name>
+        <display-name>AddOldBook</display-name>
+        <servlet-class>com.controller.addOldBook</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addOldBook</servlet-name>
+        <url-pattern>/addOldBook</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>oldBookDelete</servlet-name>
+        <display-name>OldBookDelete</display-name>
+        <servlet-class>com.controller.oldBookDelete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>oldBookDelete</servlet-name>
+        <url-pattern>/oldBookDelete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateProfile</servlet-name>
+        <display-name>UpdateProfile</display-name>
+        <servlet-class>com.controller.UpdateProfile</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateProfile</servlet-name>
+        <url-pattern>/UpdateProfile</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OrderBookController</servlet-name>
+        <display-name>OrderBookController</display-name>
+        <servlet-class>com.controller.OrderBookController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrderBookController</servlet-name>
+        <url-pattern>/OrderBookController</url-pattern>
+    </servlet-mapping>
+
+    <!-- <servlet>
+        <servlet-name>searchBookController</servlet-name>
+        <display-name>SearchBookController</display-name>
+        <servlet-class>com.controller.searchBookController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>searchBookController</servlet-name>
+        <url-pattern>/searchBookController</url-pattern>
+    </servlet-mapping> -->
+
+    <!-- Error page for HTTP 503 -->
+    <error-page>
+        <error-code>503</error-code>
+        <location>/error/503.html</location>
+    </error-page>
+
+</web-app>
